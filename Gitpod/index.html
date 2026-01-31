@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is the homepage of the website, serving as the main entry point for visitors. It includes key sections such as the navigation bar, a hero section with an introductory message, and an overview of the website's main features or services. The footer may contain links to other important pages and contact information.">
+    <title>Gitpod - a platform for programmers</title>
+
+
+    <!-- STYLE  -->
+    <link rel="stylesheet" href="index/style.css">
+
+    <!-- ICON  -->
+    <link rel="shortcut icon" href="./assets/svg/header-icon.svg" type="image/x-icon">
+
+    <!-- GOOGLE FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER  -->
+        <header>
+            <div class="container__header">
+                <div class="logo">
+                    <img class="img" src="./assets/svg/header-icon.svg" alt="header-logo" />
+                </div>
+                <nav class="nav">
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="login.html">Sign Up</a></li>
+                    </ul>
+
+                </nav>
+                <div class="burger__menu" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- MAIN  -->
+        <main>
+            <div class="container__main">
+                <section class="hero">
+                    <div class="hero__box">
+                        <h1 class="hero__title"> Always <br>
+                            ready to code!</h1>
+                        <p>Deploy new automated development environments <br>
+                            for each task in the cloud within seconds.</p>
+                        <div class="hero__block">
+                            <button class="hero__btn">Try it now</button>
+                            <p class="hero__text">Open the workspace<br>
+                                Start from any Git context. </p>
+                        </div>
+                        <div class="icon__box">
+                            <img class="logo__1" src="./assets/svg/github.svg" alt="logo-1" />
+                            <img class="logo__2" src="./assets/svg/gitlub.svg" alt="logo-2" />
+                            <img class="logo__3" src="./assets/svg/bitbucket.svg" alt="logo-3" />
+                        </div>
+                    </div>
+                    <div class="hero__img">
+                        <img class="hero__img" src="./assets/png/hero-image.png" alt="main-img" />
+                    </div>
+                </section>
+
+                <!-- TEXTS  -->
+                <section class="texts">
+                    <span>Choose a project, </span>
+                    <p>Dependency check, checkout branch, view. <br>
+                        readme.txt, install tools, run build, run tests.</p>
+                    <span>Start coding.</span>
+                </section>
+
+                <!-- CI/CD  -->
+                <section class="ci__cd">
+                    <div class="cd__box">
+                        <h2>Think about CI/CD for development environments.</h2>
+                        <p>We invented pre-builds that allow you to store application code, configuration, and
+                            infrastructure as machine-executable code in your git repositories, applied in development
+                            environments automatically and continuously.</p>
+                        <button id="ci__button">More on prebuilds</button>
+                        <button id="cd__button">Documentaion</button>
+
+                    </div>
+                    <div class="ci__cd__image">
+                        <img id="image__1" src="./assets/png/image-1.png" alt="image-1" />
+                    </div>
+                </section>
+
+                <!-- DESIGN  -->
+                <section class="design">
+                    <h2>First remotely. Security by design.</h2>
+                    <img src="./assets/jpg/image-2.jpg" alt="image-2" />
+                    <div class="sub__block">
+                        <p>You no longer need a powerful laptop to write code: Gitpod runs just as smoothly on a
+                            Chromebook or iPad. All you need is a browser. Gitpod centralizes all source code and never
+                            stores it on unsecured machines and networks.</p>
+                        <button class="Chrome">
+                            <i class="fa-brands fa-chrome" style="color: #74C0FC; font-size: 18px;"></i>
+                            Chrome Extension
+                        </button>
+                        <button class="Firefox">
+                            <i class="fa-brands fa-firefox" style="color: #74C0FC; font-size: 18px;"></i>
+                            Firefox Extension
+                        </button>
+                    </div>
+                </section>
+
+                <!-- SLIDER  -->
+                <div class="carousel__container">
+                    <h3>Technologies You Should Know</h3>
+                    <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+
+                    <div class="carousel">
+                        <div class="card">
+                            <div class="card__content">
+                                <img src="./assets/png/slide-1.png" alt="Image 1" />
+                                <p>HTML(Hyper Text Markup Language)</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__content">
+                                <img src="./assets/png/slide-2.png" alt="Image 2" />
+                                <p>JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__content">
+                                <img src="./assets/png/slide-3.png" alt="Image 3" />
+                                <p>CSS(Cascading Style Sheets)</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__content">
+                                <img src="./assets/png/slide-4.png" alt="Image 4" />
+                                <p>React JS</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+
+                    <button onclick="openNewPage()" class="btn__link">Learn more</button>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+        </main>
+
+        <!-- FOOTER  -->
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__logo">
+                    <img src="./assets/svg/header-icon.svg" alt="Logo" />
+                </div>
+                <div class="footer__links">
+                    <ul>
+                        <li><a href="about.html" class="text-about">About Us</a></li>
+                        <li><a href="services.html" class="text-services">Services</a></li>
+                        <li><a href="policy.html" class="text-privacy">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-terms">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contact">
+                    <ul>
+                        <li><span class="text__phone">Phone:</span>+99891 164-55-15</li>
+                        <li><span class="text__email">Email:</span> contact@example.com</li>
+                        <li><span class="text__address">Address:</span> Uzbekistan , Tashkent</li>
+                    </ul>
+                </div>
+                <div class="footer__extra">
+                    <p class="text__footer__info">© 2025 Gitpod. All Rights Reserved.</p>
+                    <p class="text__follow">Follow us for updates and news!</p>
+                </div>
+            </div>
+        </footer>
+
+
+        <div class="to__top"><span>&#8593</span></div>
+    </div>
+    <!-- SCRIPT  -->
+    <script src="js/index.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

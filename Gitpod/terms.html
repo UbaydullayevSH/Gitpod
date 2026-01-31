@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content=" The Terms and Conditions page outlines the rules, legal guidelines, and policies that users must agree to in order to use the website. It details user rights, website limitations, and any other important legal information.">
+  <title>Gitpod - a platfrom for programmers</title>
+  <!-- STYLE  -->
+  <link rel="stylesheet" href="terms/style.css">
+
+  <!-- ICON  -->
+  <link rel="shortcut icon" href="./assets/svg/header-icon.svg" type="image/x-icon">
+
+  <!-- GOOGLE FONTS  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- FONT AWESOME  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- HEADER  -->
+  <header>
+    <a href="/index.html" class="logo">
+      <img class="img" src="./assets/svg/header-icon.svg" alt="header-logo" />
+    </a>
+    <nav class="nav">
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="login.html">Sign Up</a></li>
+      </ul>
+
+    </nav>
+    <div class="burger__menu" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </header>
+  <!-- MAIN  -->
+  <main>
+
+    <!-- TERMS-OF-USE  -->
+    <section id="terms__of__use">
+      <div class="container">
+        <h2>Terms of Use</h2>
+        <div class="terms__grid">
+          <div class="term__item">
+            <h3>1. Accepting the Terms</h3>
+            <p>By using Gitpod, you agree to be bound by these terms and conditions. We reserve the right to modify
+              these terms at any time.</p>
+          </div>
+          <div class="term__item">
+            <h3>2. Account Responsibilities</h3>
+            <p>As a user, you are responsible for maintaining the confidentiality of your account and password. You
+              agree to notify us of any unauthorized use.</p>
+          </div>
+          <div class="term__item">
+            <h3>3. Privacy Policy</h3>
+            <p>Your data is handled with care. We follow strict guidelines to ensure privacy, detailed in our.</p>
+          </div>
+          <div class="term__item">
+            <h3>4. Restrictions</h3>
+            <p>You agree not to misuse Gitpod for any illegal or harmful activities. Violations may result in account
+              suspension or termination.</p>
+          </div>
+          <div class="term__item">
+            <h3>5. Modifications</h3>
+            <p>Gitpod reserves the right to update and change the Terms of Use. We will notify you of any significant
+              changes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <style>
+
+  </style>
+
+  <!-- FOOTER  -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__logo">
+        <img src="./assets/svg/header-icon.svg" alt="Logo" />
+      </div>
+      <div class="footer__links">
+        <ul>
+          <li><a href="about.html" class="text__about">About Us</a></li>
+          <li><a href="services.html" class="text__services">Services</a></li>
+          <li><a href="policy.html" class="text__privacy">Privacy Policy</a></li>
+          <li><a href="terms.html" class="text__terms">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <ul>
+          <li><span class="text__phone">Phone:</span>+99891 164-55-15</li>
+          <li><span class="text__email">Email:</span> contact@example.com</li>
+          <li><span class="text__address">Address:</span> Uzbekistan , Tashkent</li>
+        </ul>
+      </div>
+      <div class="footer__extra">
+        <p class="text__footer__info">© 2025 Gitpod. All Rights Reserved.</p>
+        <p class="text__follow">Follow us for updates and news!</p>
+      </div>
+    </div>
+  </footer>
+  <!-- SCRIPT  -->
+  <script src="js/terms.js"></script>
+</body>
+
+</html>

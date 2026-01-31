@@ -1,0 +1,147 @@
+ /* HEADER  */
+ header {
+   padding: 20px;
+   background-color: #333;
+   position: sticky;
+   z-index: 50;
+   top: 0;
+   width: 100%;
+   left: 0;
+   box-sizing: border-box;
+ }
+
+ .container__header {
+   width: 100%;
+   margin: 0 auto;
+   max-width: 1267px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .logo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+ }
+
+ .img {
+   width: 40px;
+ }
+
+ .nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   scrollbar-width: none;
+ }
+
+ .nav::-webkit-scrollbar {
+   display: none;
+ }
+
+
+
+ .nav ul {
+   display: flex;
+   gap: 20px;
+   align-items: center;
+ }
+
+ .nav ul li {
+   list-style: none;
+   opacity: 0.6;
+   border-bottom: 3px solid transparent;
+   transition: 300ms;
+ }
+
+ .nav ul li:hover {
+   border-bottom: 3px solid #d67403;
+   opacity: 1;
+ }
+
+ .nav ul li a {
+   text-decoration: none;
+   color: #fff;
+ }
+
+ .burger__menu {
+   display: none;
+   cursor: pointer;
+   flex-direction: column;
+   gap: 5px;
+ }
+
+ .burger__menu .bar {
+   width: 30px;
+   height: 4px;
+   background-color: #fff;
+   border-radius: 5px;
+   transition: transform 0.3s, opacity 0.3s;
+ }
+
+ .burger__menu.active .bar:nth-child(1) {
+   transform: rotate(45deg);
+   position: relative;
+   top: 8px;
+ }
+
+ .burger__menu.active .bar:nth-child(2) {
+   opacity: 0;
+ }
+
+ .burger__menu.active .bar:nth-child(3) {
+   transform: rotate(-45deg);
+   position: relative;
+   top: -10px;
+ }
+
+ .no__scroll {
+   overflow: hidden;
+ }
+
+ @media (max-width: 768px) {
+   .nav {
+     display: none;
+     position: absolute;
+     top: 80px;
+     left: 0;
+     width: 100%;
+     background-color: #333;
+     padding: 20px;
+     box-sizing: border-box;
+     z-index: 50;
+     transform: translateY(-100%);
+     flex-direction: column;
+     max-height: 70vh;
+     overflow-y: scroll;
+     height: 500px;
+   }
+
+   .nav.active {
+     display: flex;
+     transform: translateY(0);
+
+   }
+
+   .nav ul {
+     padding-top: 20px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     margin-right: 35px;
+     text-align: center;
+
+   }
+
+   .burger__menu {
+     display: flex;
+   }
+
+
+
+ }
+
+ /* /HEADER  */

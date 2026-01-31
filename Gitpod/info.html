@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This page provides additional information about the website, product, or service that may not be covered elsewhere. It might include general FAQs, support information, or an in-depth explanation of specific features.">
+    <title>Gitpod - a platform for programmers</title>
+    <!-- STYLE  -->
+    <link rel="stylesheet" href="info/style.css">
+
+    <!-- ICON  -->
+    <link rel="shortcut icon" href="./assets/svg/header-icon.svg" type="image/x-icon">
+
+    <!-- GOOGLE FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- MAIN  -->
+    <main>
+        <div class="carousel__container">
+            <p>HTML(HYPER TEXT MARKUP LANGUAGE)</p>
+            <div id="carousel1" class="carousel">
+                <div class="carousel__images">
+                    <img src="./assets/png/html-1.png" alt="Image 1" />
+                    <img src="./assets/png/html-2.png" alt="Image 2" />
+                    <img src="./assets/png/slide-1.png" alt="Image 3" />
+                </div>
+                <div class="carousel__dots">
+                    <span class="dot" onclick="currentSlide(1, 1)"></span>
+                    <span class="dot" onclick="currentSlide(2, 1)"></span>
+                    <span class="dot" onclick="currentSlide(3, 1)"></span>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- FAQ  1 -->
+        <section id="faq1" class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div>
+                <h3>What is HTML?</h3>
+                <p>HTML (HyperText Markup Language) is the standard language used to create and structure web pages. It
+                    defines the content of a webpage using elements like headings, paragraphs, links, images, and
+                    multimedia.</p>
+            </div>
+            <div>
+                <h3>What is the difference between a block-level element and an inline element in HTML?</h3>
+                <p>A block-level element takes up the full width available, starting on a new line and stretching as far
+                    as its container allows.</p>
+            </div>
+            <div>
+                <h3>What are semantic elements in HTML?</h3>
+                <p>Semantic elements in HTML are those that clearly describe their meaning to both the browser and the
+                    developer.</p>
+            </div>
+        </section>
+        <div class="carousel__container">
+            <p>CSS (CASCADING STYLE SHEET)</p>
+            <div id="carousel2" class="carousel">
+                <div class="carousel__images">
+                    <img src="./assets/png/css-1.png" alt="Image 1" />
+                    <img src="./assets/png/css-2.png" alt="Image 2" />
+                    <img src="./assets/png/slide-3.png" alt="Image 3" />
+                </div>
+                <div class="carousel__dots">
+                    <span class="dot" onclick="currentSlide(1, 2)"></span>
+                    <span class="dot" onclick="currentSlide(2, 2)"></span>
+                    <span class="dot" onclick="currentSlide(3, 2)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ  2 -->
+        <section id="faq2" class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div>
+                <h3> What is the difference between class and id in CSS?</h3>
+                <p>class is used to select multiple elements on a page, and it can be applied to any number of elements.
+                    It is selected in CSS using a period (.) followed by the class name. Example: .myClass.
+                    id is used to select a single unique element on a page. An id should be used only once per page. It
+                    is selected in CSS using a hash (#) followed by the id name. Example: #myId.</p>
+            </div>
+            <div>
+                <h3>What is the box model in CSS?</h3>
+                <p>The CSS box model describes how the elements on a webpage are structured. Every HTML element is
+                    considered as a box with the following properties:
+
+                    Content: The actual content of the element (e.g., text or images).
+                    Padding: The space between the content and the border. It adds internal spacing inside the box.
+                    Border: The edge of the element, which surrounds the padding (if any).
+                    Margin: The space outside the border. It adds external spacing between the element and surrounding
+                    elements.
+                </p>
+            </div>
+            <div>
+                <h3> What is the purpose of flexbox in CSS?</h3>
+                <p>Flexbox (Flexible Box Layout) is a layout model in CSS that makes it easier to design flexible and
+                    responsive layouts. It allows elements to be arranged in rows or columns, and it provides the
+                    ability to distribute space dynamically between items, even when their sizes are unknown or dynamic.
+                </p>
+            </div>
+        </section>
+
+        <!-- Carousel 3 -->
+        <div class="carousel__container">
+            <p>JavaScript (JS)</p>
+            <div id="carousel3" class="carousel">
+                <div class="carousel__images">
+                    <img src="./assets/png/js-1.png" alt="Image 1" />
+                    <img src="./assets/png/js-2.png" alt="Image 2" />
+                    <img src="./assets/png/slide-2.png" alt="Image 3" />
+                </div>
+                <div class="carousel__dots">
+                    <span class="dot" onclick="currentSlide(1, 3)"></span>
+                    <span class="dot" onclick="currentSlide(2, 3)"></span>
+                    <span class="dot" onclick="currentSlide(3, 3)"></span>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ  3 -->
+        <section id="faq3" class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div>
+                <h3> What is the difference between var, let, and const in JavaScript?</h3>
+                <p>var: Declares a variable that is function-scoped or globally scoped. Variables declared with var can
+                    be re-declared and updated within their scope.
+                    let: Declares a block-scoped variable that can be updated but not re-declared within the same scope.
+                    const: Declares a block-scoped variable whose value cannot be re-assigned after its initial
+                    assignment.</p>
+            </div>
+            <div>
+                <h3> What is a callback function in JavaScript?</h3>
+                <p> A callback function is a function that is passed as an argument to another function and is executed
+                    after the completion of that function's execution. Callback functions are often used in asynchronous
+                    operations, such as handling events, reading files, or making HTTP requests.</p>
+            </div>
+            <div>
+                <h3>What are promises in JavaScript?</h3>
+                <p>A promise in JavaScript is an object representing the eventual completion (or failure) of an
+                    asynchronous operation. It allows you to write cleaner, more readable code when dealing with
+                    asynchronous tasks such as API requests, file handling, etc.
+
+                    A promise can be in one of three states:
+
+                    Pending: The operation is still in progress.
+                    Fulfilled: The operation completed successfully.
+                    Rejected: The operation failed.</p>
+            </div>
+        </section>
+
+        <!-- carousel 4 -->
+
+        <div class="carousel__container">
+            <p>React (JS)</p>
+            <div id="carousel4" class="carousel">
+                <div class="carousel__images">
+                    <img src="./assets/png/react-1.png" alt="Image 1" />
+                    <img src="./assets/png/react-2.png" alt="Image 2" />
+                    <img src="./assets/png/slide-4.png" alt="Image 3" />
+                </div>
+                <div class="carousel__dots">
+                    <span class="dot" onclick="currentSlide(1, 3)"></span>
+                    <span class="dot" onclick="currentSlide(2, 3)"></span>
+                    <span class="dot" onclick="currentSlide(3, 3)"></span>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ  -->
+        <section id="faq4" class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div>
+                <h3> What is the difference between state and props in React?</h3>
+                <p>State is a built-in object in React components that allows components to track and manage their
+                    internal data or state. It is mutable, meaning you can update it using the setState method (class
+                    components) or the useState hook (functional components). The state directly affects the component's
+                    behavior and rendering.
+                    Props (short for "properties") are read-only objects passed from a parent component to a child
+                    component. They allow data to flow from the parent to the child and are immutable in the child
+                    component. Props are used to pass information like data, functions, or event handlers to child
+                    components.</p>
+            </div>
+            <div>
+                <h3> What are functional components and class components in React?</h3>
+                <p>Functional components are simpler components written as JavaScript functions. They accept props as
+                    arguments and return JSX, which is rendered by React. Functional components were stateless before
+                    React introduced hooks, but now they can also manage state and side effects.</p>
+            </div>
+            <div>
+                <h3> What is the use of the useEffect hook in React?</h3>
+                <p>The useEffect hook in React is used to perform side effects in functional components. Side effects
+                    are operations that interact with the outside world, such as fetching data, updating the DOM, or
+                    setting up subscriptions. It replaces lifecycle methods such as componentDidMount,
+                    componentDidUpdate, and componentWillUnmount in class components.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- SCRIPT  -->
+    <script src="js/info.js"></script>
+</body>
+
+</html>

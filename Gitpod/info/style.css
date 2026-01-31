@@ -1,0 +1,130 @@
+/* MAIN */
+*{
+  font-family: 'Roboto';
+}
+.carousel__container {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Roboto';
+}
+  
+.carousel {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+}
+  
+.carousel__images img {
+    width: 100%;
+    height: auto;
+    display: none;
+    border-radius: 10px;
+}
+  
+.carousel__images img.active {
+    display: block;
+}
+  
+.carousel__dots {
+    text-align: center;
+    margin-top: 10px;
+}
+  
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.dot.active {
+    background-color: #555;
+}
+
+
+#carousel1 .carousel__images img {
+    border-radius: 10px;
+}
+#carousel2 .carousel__images img {
+    border-radius: 10px;
+}
+#carousel3 .carousel__images img {
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .carousel {
+      width: 90%; 
+    }
+  
+    .carousel__dots {
+      margin-top: 5px; 
+    }
+  
+    .dot {
+      height: 10px;
+      width: 10px; 
+      margin: 0 3px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel {
+      width: 100%;
+    }
+  
+    .carousel__dots {
+      margin-top: 5px;
+    }
+  
+    .dot {
+      height: 8px;
+      width: 8px;
+      margin: 0 2px;
+    }
+  
+    .carousel__container p {
+      font-size: 1.2rem;
+    }
+  }
+
+/* FAQ */
+.faq {
+  padding: 50px 20px;
+  margin-top: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faq h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.faq div {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.faq div h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.faq div p {
+  display: none;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.faq div.open p {
+  display: block;
+}

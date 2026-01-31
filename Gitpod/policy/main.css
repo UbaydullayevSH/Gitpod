@@ -1,0 +1,69 @@
+/* MAIN */
+main {
+    margin-top: 80px;
+    padding: 40px;
+    text-align: center;
+}
+
+.privacy__policy__section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.policy__intro {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+.policy__content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.policy__content article {
+    background-color: #f4f4f4;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.policy__content article:hover {
+    background-color: #ffffff;
+}
+
+.policy__content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.policy__content p, .policy__content ul {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.7;
+}
+
+.policy__content ul {
+    padding-left: 20px;
+}
+
+.policy__content ul li {
+    margin-bottom: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+    .policy__content article {
+        margin-bottom: 20px;
+    }
+}
+
+/* /MAIN  */
