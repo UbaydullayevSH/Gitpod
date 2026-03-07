@@ -1,6 +1,6 @@
  /* HEADER  */
- 
- 
+
+
  header {
      display: flex;
      justify-content: space-evenly;
@@ -15,12 +15,12 @@
      box-sizing: border-box;
  }
 
- .container__header{
-      width: 100%;
-  max-width: 1267px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+ .container__header {
+     width: 100%;
+     max-width: 1267px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
  }
 
  .logo {

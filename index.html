@@ -113,14 +113,16 @@
                         <p>You no longer need a powerful laptop to write code: Gitpod runs just as smoothly on a
                             Chromebook or iPad. All you need is a browser. Gitpod centralizes all source code and never
                             stores it on unsecured machines and networks.</p>
-                        <button class="Chrome">
-                            <i class="fa-brands fa-chrome" style="color: #74C0FC; font-size: 18px;"></i>
-                            Chrome Extension
-                        </button>
-                        <button class="Firefox">
-                            <i class="fa-brands fa-firefox" style="color: #74C0FC; font-size: 18px;"></i>
-                            Firefox Extension
-                        </button>
+                        <div class="button__block">
+                            <button class="Chrome">
+                                <i class="fa-brands fa-chrome" style="color: #74C0FC; font-size: 18px;"></i>
+                                Chrome Extension
+                            </button>
+                            <button class="Firefox">
+                                <i class="fa-brands fa-firefox" style="color: #74C0FC; font-size: 18px;"></i>
+                                Firefox Extension
+                            </button>
+                        </div>
                     </div>
                 </section>
 
@@ -155,10 +157,11 @@
                             </div>
                         </div>
                     </div>
+                 
+                        <button class="next" onclick="moveCarousel(1)">&#10095;</button>
 
-                    <button class="next" onclick="moveCarousel(1)">&#10095;</button>
-
-                    <button onclick="openNewPage()" class="btn__link">Learn more</button>
+                        <button onclick="openNewPage()" class="btn__link">Learn more</button>
+                
                 </div>
 
 
