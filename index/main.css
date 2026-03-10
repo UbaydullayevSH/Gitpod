@@ -338,7 +338,7 @@ main {
 }
 
 .prev {
-  left: 8px;
+  left: -10px;
   position: absolute;
   top: 50%;
   background: none;
@@ -352,7 +352,7 @@ main {
 }
 
 .next {
-  right: 8px;
+  right: -9px;
   position: absolute;
   top: 50%;
   background: none;
@@ -393,6 +393,8 @@ margin: 20px;
     flex: 0 0 90%;
   }
 }
+
+
 
 
 
